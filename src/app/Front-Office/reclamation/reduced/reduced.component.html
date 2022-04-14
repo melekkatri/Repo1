@@ -1,0 +1,23 @@
+  <div class="container">
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Type</th>
+      <th scope="col">Date</th>
+      <th scope="col">Etat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rec of Reclamations"(click)="viewrec(rec.id)" >
+      <th scope="row">{{rec.id}}</th>
+      <td>{{rec.type}}</td>
+      <td>{{rec.date}}</td>
+      <td>{{rec.etat}}</td>
+    </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>
+</div>
+
