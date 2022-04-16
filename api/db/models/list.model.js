@@ -7,11 +7,7 @@ const ListSchema = new mongoose.Schema({
         minlength: 1,
         trim: true
     },
-    // with auth
-    _userId: {
-        type: mongoose.Types.ObjectId,
-        required: true
-    }
+   
 
 })
 
